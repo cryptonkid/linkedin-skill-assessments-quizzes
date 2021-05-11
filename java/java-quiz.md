@@ -50,6 +50,8 @@
 - [ ] 123
 - [ ] 1234
 
+array.length  it is a property of a Array. 
+
 #### Q6. Which of the following can replace the CODE SNIPPET to make the code below print "Hello World"?
 
 ```java
@@ -85,6 +87,7 @@ System.out.println(str);
 - [ ] CDE
 - [ ] D
 - [x] "abcde"
+As all functions donot perform operation on the input/given sting they return a new string object. 
 
 #### Q8. What is the result of this code?
 
@@ -107,7 +110,7 @@ class Main {
 - [x] "java.lang.Exception"
 - [ ] It will run and throw an exception.
 - [ ] It will not compile.
-
+	
 #### Q9. Which class can compile given these declarations?
 
 ```java
