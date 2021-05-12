@@ -73,6 +73,8 @@ interface Interface2 {
 - [ ] `super.print();`
 - [x] `Interface1.print(); Interface2.print();`
 
+Static Methods of interface can be accessed using interface nambes.
+
 #### Q7. What does the following code print?
 
 ```java
@@ -87,6 +89,7 @@ System.out.println(str);
 - [ ] CDE
 - [ ] D
 - [x] "abcde"
+
 As all functions donot perform operation on the input/given sting they return a new string object. 
 
 #### Q8. What is the result of this code?
@@ -111,24 +114,25 @@ class Main {
 - [ ] It will run and throw an exception.
 - [ ] It will not compile.
 	
+Note: Function can have "Exception" as return type.	
+
 #### Q9. Which class can compile given these declarations?
 
 ```java
 interface One {
     default void method() {
-        System.out.println(""One"");
+        System.out.println("One");
     }
 }
 
 interface Two {
     default void method () {
-        System.out.println(""One"");
+        System.out.println("Two");
     }
 }
 ```
 
-- [ ] A
-
+- [ ] A 
 ```java
 class Three implements One, Two {
     public void method() {
@@ -136,9 +140,9 @@ class Three implements One, Two {
     }
 }
 ```
+This throws complication error because of "super.One.method()" not because of the method() is comman in interface.
 
 - [ ] B
-
 ```java
 class Three implements One, Two {
     public void method() {
@@ -146,14 +150,14 @@ class Three implements One, Two {
     }
 }
 ```
-
+This fails as method() is not static
 - [ ] C
 
 ```java
 class Three implements One, Two {
 }
 ```
-
+This throws compilation error as the comman function has to be overriden in the implementing class.
 - [x] D
 
 ```java
@@ -216,7 +220,7 @@ class Main {
 - [ ] It will throw an exception on line 5.
 - [x] "123"
 
-**Explanation:** The answer is "123". The `abs()` method evaluates to the one inside mypackage.Math class.
+**Explanation:** There is no conflict as the "Math" refers to "import mypackage.Math;" as it is completely added path
 
 #### Q12. What is the result of this code?
 
@@ -260,6 +264,8 @@ class Main {
 - [ ] `java Main.class 1 "2" 2 5`
 - [ ] `java Main 1 "2" "3 4" 5`
 
+**Expliantion** args[] start with 0 and 3rd element is 2 in b & c option but "java" command is always run with class name not class name with extension.
+
 #### Q14. What is the output of this code?
 
 ```java
@@ -281,7 +287,7 @@ class Main {
 #### Q15. What is the output of this code?
 
 ```java
-class Main {
+class Main { 
     public static void main (String[] args) {
         String message = "Hello world!";
         String newMessage = message.substring(6, 12)
@@ -292,7 +298,7 @@ class Main {
 ```
 
 - [ ] The code does not compile.
-- [x] A runtime exception is thrown.
+- [x] A runtime exception is thrown. 
 - [ ] "world!!world"
 - [ ] "world!world!"
 
@@ -301,6 +307,11 @@ String m = "Hello world!";
 String n = m.substring(6,12) + m.substring(12,6);
 System.out.println(n);
 ```
+**Explination** :: substring(startIndex,endIndex)
+			startIndex : Inclusive  && endIndex : Exclusive
+			substring() internal Implementation 
+			for substring(12,6) it breaks as max startIndex is 11.
+		
 
 #### Q16. How do you write a foreach loop that will iterate over ArrayList\<Pencil\>pencilCase?
 
