@@ -365,7 +365,7 @@ System.out.print("apple".compareTo("banana"));
 
 **Explanation**: LocalDate is newest class added in java 8
 
-#### Q23. Fill in the blank to create a piece of code that will tell wether int0 is divisible by 5:
+#### Q23. Fill in the blank to create a piece of code that will tell wether int 0 is divisible by 5:
 
 `boolean isDivisibleBy5 = _____`
 
