@@ -365,7 +365,7 @@ System.out.print("apple".compareTo("banana"));
 
 **Explanation**: LocalDate is newest class added in java 8
 
-#### Q23. Fill in the blank to create a piece of code that will tell wether int 0 is divisible by 5:
+#### Q23. Fill in the blank to create a piece of code that will tell wether int0 is divisible by 5:
 
 `boolean isDivisibleBy5 = _____`
 
@@ -373,6 +373,8 @@ System.out.print("apple".compareTo("banana"));
 - [x] `int0 % 5 == 0`
 - [ ] `int0 % 5 != 5`
 - [ ] `Math.isDivisible(int0, 5)`
+
+**Explanation**: Reminder must be zero
 
 #### Q24. How many times will this code print "Hello World!"?
 
@@ -392,7 +394,7 @@ class Main {
 - [ ] 5 times
 - [ ] infinite number of times
 
-Reason : Observe the loop increment. It's not an increment, it's an assignment(post).
+**Reason** : Observe the loop increment. It's not an increment, it's an assignment(post).
 
 #### Q25. The runtime system starts your program by calling which function first?
 
@@ -466,6 +468,7 @@ class Main {
 - [ ] The code does not compile.
 - [ ] "ello"
 
+REPEATED QUESTION
 #### Q30. Object-oriented programming is a style of programming where you organize your program around \_**\_ rather than \_\_** and data rather than logic.
 
 - [ ] functions; actions
@@ -473,6 +476,7 @@ class Main {
 - [ ] actions; functions
 - [ ] actions; objects
 
+REPEATED QUESTION
 #### Q31. What statement returns true if "nifty" is of type String?
 
 - [ ] `"nifty".getType().equals("String")`
@@ -524,7 +528,8 @@ class Main {
 - [ ] Hello!Hello!
 - [x] Hello!World!
 - [ ] It will not compile because of line 11.
-
+ 
+ **Duplicate**
 #### Q34. What method can be used to create a new instance of an object?
 
 - [ ] another instance
@@ -585,6 +590,8 @@ class Main {
 - [x] It will print "Hello World!" three times.
 - [ ] It will run forever.
 
+**Explination** : It will print "Hello World!" in call back loop.
+
 #### Q38. What is the output of this code?
 
 ```java
@@ -619,12 +626,17 @@ class Main {
 		message += " ";
 	}
 }
-```
+``` 
 
 - [ ] Hello World!
 - [x] HelloHelloWorld!
 - [ ] Hello Hello World!
 - [ ] Hello HelloWorld!
+**Explination** : Java is strictly pass by value. For pass by refrence on needs to do any of the 3 steps here : 
+			Making a variable as public in a class
+			Return a value and update it
+			Create a single element array
+
 
 #### Q40. What is displayed when this code is compiled and executed?
 
